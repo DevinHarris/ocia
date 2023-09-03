@@ -14,9 +14,9 @@ export default function Page() {
 
   const [postTitle, setPostTitle] = useState("");
   const [postType, setPostType] = useState("")
-  const { register,  handleSubmit } = useForm();
+  const { register,  handleSubmit } = useForm<Post>();
 
-  const onSubmit: SubmitHandler<Post> = (data) => {
+  const onSubmit = (data) => {
    const { postTitle } = data;
    setPostTitle(postTitle)
 
