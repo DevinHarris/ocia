@@ -4,9 +4,9 @@ import type { Metadata } from 'next'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import Editor from '@/components/Editor'
 
-export const metadata: Metadata = {
-    title: "New Post - OCIA"
-}
+// export const metadata: Metadata = {
+//     title: "New Post - OCIA"
+// }
 
 export default function NewPage() {
 
