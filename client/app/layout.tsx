@@ -9,10 +9,10 @@ import { client } from '@/apollo-client'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'OCIA - An open platform for all.',
-  description: 'Sharing without limits.'
-}
+// export const metadata: Metadata = {
+//   title: 'OCIA - An open platform for all.',
+//   description: 'Sharing without limits.'
+// }
 export default function RootLayout({
   children,
 }: {
@@ -22,6 +22,9 @@ export default function RootLayout({
     <ApolloProvider client={client}>
       
       <html lang="en">
+          <head>
+            <title>OCIA - Open information for all.</title>
+          </head>
           <body className={inter.className}>
             {children}
           </body>
